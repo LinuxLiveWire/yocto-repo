@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote  name="GitHub"
+           fetch="https://github.com" />
+  <remote  name="YoctoProject"
+           fetch="git://git.yoctoproject.org" />
+  <remote  name="OpenEmbedded"
+           fetch="git://git.openembedded.org" />
+  <remote  name="Linaro"
+           fetch="git://git.linaro.org/openembedded/meta-linaro.git" />
+
+  <default revision="refs/heads/thud"
+           remote="GitHub"
+           sync-j="4" />
+
+  <project name="poky" remote="YoctoProject" path="poky"/>
+  <project name="meta-openembedded" remote="OpenEmbedded" path="meta-openembedded/"/>
+  <project name="meta-linaro" remote="Linaro" path="openembedded/meta-linaro.git"/>
+  <project name="meta-renesas" remote="GitHub" path="renesas-rcar/meta-renesas.git"/>
+
+</manifest>
