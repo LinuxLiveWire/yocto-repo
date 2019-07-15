@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote  name="YoctoProject"
+           fetch="git://git.yoctoproject.org" />
+  <remote  name="OpenEmbedded"
+           fetch="git://git.openembedded.org" />
+  <remote  name="BBB"
+           fetch="git://github.com/jumpnow" />
+  <remote  name="Qt5"
+           fetch="https://github.com/meta-qt5" />
+
+  <project name="poky" remote="YoctoProject" path="poky/" revision="refs/heads/warrior"/>
+  <project name="meta-openembedded" remote="OpenEmbedded" path="meta-openembedded/" revision="refs/heads/warrior"/>
+  <project name="meta-bbb" remote="BBB" path="meta-bbb/" revision="refs/heads/warrior"/>
+  <project name="meta-qt5.git" remote="Qt5" path="meta-qt5/" revision="refs/heads/warrior"/>
+
+</manifest>
